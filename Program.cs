@@ -1,4 +1,11 @@
-﻿int[] arrNum = { 2, 6, 7, 5, 3, 9 };
+﻿Console.Write("Quanti numeri vuoi inserire? ");
+int n = Int32.Parse(Console.ReadLine());
+int[] arrNum = new int[n];
+for (int i = 0; i < n; i++)
+{
+    Console.Write($"Inserisci numero {i+1} ");
+    arrNum[i] = Int32.Parse(Console.ReadLine());
+}
 StampaArray(arrNum);
 int[] arrNumQ = ElevaArrayAlQuadrato(arrNum);
 StampaArray(arrNumQ);
