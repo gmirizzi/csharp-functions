@@ -1,7 +1,10 @@
 ﻿int[] arrNum = { 2, 6, 7, 5, 3, 9 };
 StampaArray(arrNum);
-StampaArray(ElevaArrayAlQuadrato(arrNum));
+int[] arrNumQ = ElevaArrayAlQuadrato(arrNum);
+StampaArray(arrNumQ);
 StampaArray(arrNum);
+Console.WriteLine("La somma degli elementi dell'array è " + sommaElementiArray(arrNum));
+Console.WriteLine("La somma degli elementi elevati al quadrato è " + sommaElementiArray(arrNumQ));
 
 //Functions
 void StampaArray(int[] array)
