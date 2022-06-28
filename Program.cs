@@ -1,4 +1,5 @@
-﻿
+﻿int[] arrNum = { 2, 6, 7, 5, 3, 9 };
+StampaArray(arrNum);
 
 //Functions
 void StampaArray(int[] array)
@@ -6,9 +7,10 @@ void StampaArray(int[] array)
     string content = "[";
     for (int i = 0; i < array.Length; i++)
     {
-        content += array[i];
+        content += array[i] + ", ";
     }
-    Console.WriteLine(content+="]");
+    content = content.Remove(content.Length - 2, 2);
+    Console.WriteLine(content+"]");
 };
 
 int Quadrato(int numero)
