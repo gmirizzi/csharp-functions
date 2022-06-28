@@ -1,5 +1,7 @@
 ﻿int[] arrNum = { 2, 6, 7, 5, 3, 9 };
 StampaArray(arrNum);
+StampaArray(ElevaArrayAlQuadrato(arrNum));
+StampaArray(arrNum);
 
 //Functions
 void StampaArray(int[] array)
